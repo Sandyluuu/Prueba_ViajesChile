@@ -1,0 +1,13 @@
+nav {
+    background-color: rgb(60, 140, 170);
+}
+
+nav a {
+    color: white;
+}
+
+.header {
+    background: url(../img/bg-header.jpeg) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+  }
