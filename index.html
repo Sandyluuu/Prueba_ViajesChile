@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/367b5eaef6.js" crossorigin="anonymous"></script>
     <title>ViajesChile</title>
 </head>
 
 <body>
 
+   <div class="colores">
+
     <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="./assets/img/viajes.svg" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
+                <img src="./assets/img/viajes.svg" alt="Logo" width="50" height="40" class="d-inline-block align-text-top">
                 Viajes Chile
               </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +30,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link" href="#">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Quienes Somos</a>
@@ -67,13 +69,15 @@
             </button>
         </div>
         </header>
-    
+
+     <div class="container">
         <section id="Somos" class="container">
 
             <h4>QUIÉNES SOMOS</h4>
             <div class="row">
                 <div class="col align-self-start">
-                    <i class="fa-solid fa-plane fa-xl" style="color: #ffffff;"></i>
+                    <div class="quien-iconos">
+                    <i class="fa-solid fa-plane fa-xl"></i></div>
                     <p class="my-3">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -88,11 +92,15 @@
                         ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                         aliquip ex ea commodo consequat.
                         <br>
-                        <i class="fa-solid fa-mountain fa-xl" style="color: #ffffff;"></i>
+                        <div class="quien-iconos">
+                        <i class="fa-solid fa-mountain fa-xl"></i>
+                        </div>
                     </p>
                 </div>
                 <div class="col align-self-start">
-                    <i class="fa-solid fa-route fa-xl" style="color: #ffffff;"></i>
+                    <div class="quien-iconos">
+                    <i class="fa-solid fa-route fa-xl"></i>
+                    </div>
                     <p class="my-3">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -102,13 +110,12 @@
                 </div>
             </div>
         </section>
-
-        <section>
-            <section id="Destacados">
+   
+        <section id="Destacados">
 
                 <h4> DESTACADOS </h4>
         
-                <div class="row row-cols-sm-4 g-3">
+                <div class="row row-cols-sm-4 g-2">
                     <div class="col">
                       <div class="card h-120">
                         <img src="./assets/img/card1.jpg" class="card-img-top" alt="...">
@@ -123,7 +130,7 @@
                         <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Lorem ipsum</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam nostrum voluptatem libero, ipsam esse, quos sequi corrupti et voluptatibus exercitationem fuga, earum facilis natus dicta assumenda reiciendis? Quod, sunt!</p>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam nostrum voluptatem libero, ipsam esse, quos sequi corrupti et voluptatibus exercitationem fuga, earum facilis natus dicta assumenda reiciendis?</p>
                         </div>
                       </div>
                     </div>
@@ -148,7 +155,7 @@
                   </div>
         </section>
 
-        <section class="contacto">
+        <section id="contacto">
         
         <h4>CONTACTO</h4>
 
@@ -156,6 +163,7 @@
                 <label for="exampleFormControlInput1" class="form-label">Nombre</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ej: Pepito Perez">
               </div>
+              <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Asunto</label>
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ej: Viajes">
             </div>
@@ -163,9 +171,27 @@
                 <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
-
               <button type="button" class="btn btn-info">Enviar</button>
         </section>
+        </div>
+        <footer>
+            <div class="row d-flex justify-content-around">
+                <div class="col col-6 title">
+            <h4>VIAJES CHILE</h4>
+               </div>
+                 <div class="col col-2 icons">
+                    <ul class="row icons" style="list-style-type:none;">
+                    <li class="col"><i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i></li>
+                    <li class="col"><i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i></li>
+                    <li class="col"><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i></li>
+                    <li class="col"><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i> </li>
+                  </div>
+                </ul>
+            </div>
+        </footer>
+
+         
+    </div>
 
 
 
@@ -183,6 +209,4 @@
         <script src="assets/js/scripts.js"></script>
 
 </body>
-
-
 </html>
